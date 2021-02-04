@@ -1,6 +1,10 @@
+import Basic from './Basic'
+
+
+
 function App() {
   return (
-    <h1>serverless function react</h1>
+    <Basic />
   );
 }
 
