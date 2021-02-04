@@ -52,6 +52,4 @@ exports.handler = async (event, context) => {
             body: 'server error'
         }
     }
-
-
 } 
