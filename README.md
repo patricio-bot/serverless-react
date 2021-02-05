@@ -19,3 +19,7 @@ Using airtable-api and serverless functions in React
  to='/index.html'
  status=200
 ```
+
+## Deploy
+
+https://react-serverless.netlify.app/
