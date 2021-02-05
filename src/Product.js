@@ -12,12 +12,14 @@ const Product = () => {
             const { data } = await axios.get(`/api/products?id=${productID}`)
             setProduct(data)
         } catch (error) {
-
+            console.log(error);
         }
         setLoading(false)
     }
     useEffect(() => {
+
         fetchData()
+        // eslint-disable-next-line
     }, [])
 
     if (loading) {
