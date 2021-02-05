@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 
 const url = '/api/products'
@@ -25,13 +26,13 @@ const Airtable = () => {
             <div className="products">
                 {products.map((product) => {
                     const { id, url, price, name } = product
-                    return <article className="product" key={id}>
+                    return <Link to={`/${id}`} className="product" key={id}>
                         <img src={url} alt={name} />
                         <div className="info">
                             <h5>{name}</h5>
                             <h5 className='price'>€{price}</h5>
                         </div>
-                    </article>
+                    </Link>
                 })}
             </div>
         </section>
